@@ -3,7 +3,7 @@
     <div class="bg-gray-50 border border-gray-200 p-10 rounded">
         <header>
             <h1 class="text-3xl text-center font-bold my-6 uppercase">
-                Manage Gigs
+                Your Adventures
             </h1>
         </header>
 
@@ -17,11 +17,11 @@
                                     {{ $adventure->title }}
                                 </a>
                             </td>
-                            <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
+                            {{-- <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
                                 <a href="/adventure/{{ $adventure->id }}/edit" class="text-blue-400 px-6 py-2 rounded-xl">
                                     Edit
                                 </a>
-                            </td>
+                            </td> --}}
                             <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
                                 <form action="/adventure/{{ $adventure->id }}" method="post">
                                     @csrf

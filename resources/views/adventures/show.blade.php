@@ -1,9 +1,8 @@
 <x-layout>
 
 
-    <a href="/" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> <- Back</a>
-    <div class="absolute bg-cover left-0 w-full bg-no-repeat bg-center  top-[-60px] h-[32rem] opacity-90 z-[1]" style="background-image: url('http://127.0.0.1:8000/images/bgo2.jpg')"></div>
-            <div class="mx-4">
+    <div class="absolute bg-cover left-0 w-full bg-no-repeat bg-center  top-[-60px] h-[30rem] opacity-90 -z-[1]" style="background-image: url('http://127.0.0.1:8000/images/bgo2.jpg')"></div>
+            <div class="mx-4 relative top-[12rem]">
                 <x-card class="p-10">
                     <div class="flex flex-col items-center justify-center text-center">
                         <img class="w-48 mr-6 mb-6"
@@ -16,6 +15,10 @@
                                 class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs">
                                 <a href="">{{ $adventure->destinations }}</a>
                             </li>
+														<li
+														class="flex items-center justify-center  text-black mr-2 text-xs">
+														<a href="">{{ $adventure->created_at }}</a>
+												</li>
                         </ul>
                         <div class="text-lg my-4">
                             <i class="fa-solid fa-location-dot"></i> {{ $adventure->location }}
@@ -28,7 +31,7 @@
                             <div class="text-lg space-y-6">
                                 <p>{{ $adventure->description }}</p>
 																<h2 class="text-3xl font-bold mb-4">
-																	Description
+																	Tips
 															</h2>
 																<p>{{ $adventure->tips }}</p>
                                 
